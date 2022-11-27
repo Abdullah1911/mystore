@@ -1,0 +1,400 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+:root {
+
+    --navbar-height: 40px
+}
+
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background: black;
+    opacity: 0.4;
+}
+
+#navbar::before {
+
+    content: "";
+    background-color: rgb(20, 19, 19);
+    height: 13%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+/* navigation bar: logo and image */
+
+
+#logo img {
+    padding: 3px 30px;
+    width: 81px;
+    height: 81px;
+    filter: invert(100%);
+}
+
+/* navigation bar: list styling */
+#navbar ul {
+    margin: 11px 423px 0px 244px;
+    display: flex;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 6px 19px;
+    margin: 10px 13px;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a {
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    font-weight: 100;
+    padding: 1px 8px;
+    /* font-family: 'Manrope', sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(244, 238, 238);
+    border-radius: 10px;
+    font-weight: 100;
+
+}
+
+/* Home section area  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    height: 533px;
+    /* margin: 40px; */
+    padding: 0px 337px;
+    text-align: center;
+
+}
+
+#home::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4) url('../IMG/mystore5.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 38rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background-blend-mode: darken;
+}
+
+#home h1 {
+    font-family: 'PT Sans', sans-serif;
+    color: aliceblue;
+    margin-top: 94px;
+}
+
+#home p {
+    font-size: 19px;
+    color: rgb(196, 196, 196);
+    padding: 4px 4px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* service section  */
+
+
+
+#service-container::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6) url('../IMG/mystore4.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 608px;
+    left: 0px;
+    height: 43rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background-blend-mode: darken;
+
+}
+
+
+#service-container h1 {
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+    margin: 88px 14px 93px;
+    font-family: 'PT Sans', sans-serif;
+    /* font-family: 'Manrope', sans-serif; */
+}
+
+.service {
+    color: rgb(244, 246, 245);
+    height: 357px;
+    /* width: 414px; */
+    display: flex;
+    margin: 0px 20px;
+    justify-content: center;
+    /* font-family: 'Manrope', sans-serif; */
+    font-family: 'PT Sans', sans-serif;
+}
+
+.service .box {
+    margin: -40px 14px;
+    height: 99%;
+    width: 505px;
+    border: 2px solid rgb(90, 165, 65);
+    box-shadow: 7px 6px 4px rgb(46, 59, 59);
+    border-radius: 15px;
+
+}
+
+.img {
+    display: block;
+    margin: 10px auto;
+    height: 150px;
+    width: 150px;
+}
+
+#free {
+    display: block;
+    margin: 36px auto;
+    height: 96px;
+    width: 141px;
+
+}
+
+.service .box h2 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding: 0px;
+}
+
+.service .box P {
+
+    padding: 9px 25px;
+    margin: 5px 10px;
+}
+
+/* availabel brands section */
+
+#brand {}
+
+#brand::before {
+
+    content: "";
+    background: rgba(0, 0, 0, 0.3) url('../IMG/mystore6.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 81rem;
+    left: 0px;
+    height: 27rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background-blend-mode: darken;
+
+}
+
+.brand-container {
+    border: 2px solid greenyellow;
+    display: flex;
+    margin: 39px;
+    border-radius: 25px;
+    box-shadow: 7px 6px 4px rgb(46, 59, 59);
+}
+
+.brand-container .brand-item {
+    height: 230px;
+}
+
+.brand-item img {
+
+    height: 100px;
+    width: 100px;
+    margin: 61px 24px;
+}
+
+.brand-item .phone {
+    margin: 78px 25px;
+    height: 80px;
+    width: 180px;
+}
+
+.h-brand {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2.8rem;
+    margin: 111px 1px 26px 26px;
+    padding: 12px;
+}
+
+/* contact section  */
+
+#contact {
+    position: relative;
+
+}
+
+#contact::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6) url('../IMG/mystore7.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 727px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background-blend-mode: darken;
+
+
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 439px 34px 1px;
+    margin: 0px 80px 0px 87px;
+    border: 2px solid greenyellow;
+    border-radius: 20px;
+    box-shadow: 7px 6px 4px rgb(46, 59, 59);
+
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 800px;
+    padding: 0.5rem;
+    border-radius: 15px;
+
+}
+
+.contact-box form {
+    width: 60%;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+
+}
+
+.contact-box label {
+    font-size: 1.2rem;
+
+}
+
+.contact-box ::placeholder {
+    font-family: 'PT Sans', sans-serif;
+    color: rgb(210, 70, 10);
+
+}
+
+
+
+
+#h-contact {
+    color: white;
+    font-size: 2.2rem;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    margin: 50px 0px 15px 0px;
+    padding: 34px 12px 0px 0px;
+}
+
+
+
+
+/* footer  */
+
+footer {
+    background: black;
+    color: white;
+    padding: 10px 19px;
+    margin-top: 25px;
+}
+
+
+
+
+
+/* utility classes */
+
+.h-primary {
+    font-size: 2.8rem;
+    margin: 12px;
+    padding: 12px;
+}
+
+.h-secondery {
+    font-size: 2.3rem;
+    margin: -55px;
+    padding: 12px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 4px 8px;
+    margin-top: 10px;
+    color: rgb(254, 249, 249);
+    border: 1px solid white;
+    background-color: rgb(6, 199, 64);
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px rgb(94, 164, 118);
+}
+
+#btn {
+    cursor: pointer;
+    padding: 4px 8px;
+    width: 69px;
+    margin-top: 5px;
+    color: rgb(254, 249, 249);
+    border: 1px solid white;
+    background-color: rgb(6, 199, 64);
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px rgb(94, 164, 118);
+}
+
+#btn:hover {
+    background-color: rgb(221, 204, 203);
+    color: rgb(26, 211, 19);
+    box-shadow: 2px 3px 3px rgb(59, 55, 55);
+}
+
+.btn:hover {
+    background-color: rgb(221, 204, 203);
+    color: rgb(26, 211, 19);
+    box-shadow: 2px 3px 3px rgb(59, 55, 55);
+}
+
+.center {
+
+    text-align: center;
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 356px;
+}
+
+#reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 449px;
+    margin-top: -30px;
+}
